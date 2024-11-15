@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductTitle debe de mostrar el componente con el nombre del producto 1`] = `
+<div
+  className="productCard undefined"
+>
+  <span
+    className="productDescription undefined"
+  >
+    Coffee Mug - Card
+  </span>
+</div>
+`;
+
+exports[`ProductTitle debe de mostrar el componente con el nombre del producto 2`] = `
+<div
+  className="productCard undefined"
+>
+  <span
+    className="productDescription undefined"
+  >
+    Pizza - Card
+  </span>
+</div>
+`;
+
+exports[`ProductTitle debe de mostrar el componente correctamente con el titulo 1`] = `
+<span
+  className="productDescription undefined"
+>
+  Product Title
+</span>
+`;
