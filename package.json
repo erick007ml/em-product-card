@@ -19,6 +19,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test:watch": "tsdx test --watch",
+    "test": "tsdx test ",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",

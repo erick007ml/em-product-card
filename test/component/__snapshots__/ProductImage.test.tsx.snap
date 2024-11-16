@@ -5,7 +5,7 @@ exports[`ProductImage debe de mostrar el componente con la imagen del producto 1
   className="productCard undefined"
 >
   <img
-    alt="Product Image"
+    alt="Product"
     className="productImg undefined"
     src="./pizza.png"
   />
@@ -14,7 +14,7 @@ exports[`ProductImage debe de mostrar el componente con la imagen del producto 1
 
 exports[`ProductImage debe de mostrar el componente correctamente con la imagen 1`] = `
 <img
-  alt="Product Image"
+  alt="Product"
   className="productImg undefined"
   src="https://cat.com/cat.png"
 />
