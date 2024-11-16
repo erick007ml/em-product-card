@@ -11,10 +11,10 @@ export interface ProductButtonsProps {
 export const ProductButtons = ({ className, style }: ProductButtonsProps) => {
   const { increaseBy, counter, maxCount } = useContext(ProductContext)
 
-  const isMaxReached = useCallback(
-    () => !!maxCount && counter === maxCount,
-    [counter, maxCount]
-  )
+  const isMaxReached = useCallback(() => !!maxCount && counter === maxCount, [
+    counter,
+    maxCount,
+  ])
 
   return (
     <div style={style} className={`${styles.buttonsContainer} ${className}`}>
