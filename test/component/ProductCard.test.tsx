@@ -1,8 +1,8 @@
-import React, { act } from 'react';
-import renderer from 'react-test-renderer';
-import { ProductCard } from '../../src/components';
+import React, { act } from 'react'
+import renderer from 'react-test-renderer'
+import { ProductCard } from '../../src/components'
 
-import { product1 } from '../data/products';
+import { product1 } from '../data/products'
 
 describe('ProductCard', () => {
   test('debe de mostrar el componente correctamente', () => {
@@ -14,9 +14,9 @@ describe('ProductCard', () => {
           </>
         )}
       </ProductCard>
-    );
-    expect(wrapper.toJSON()).toMatchSnapshot();
-  });
+    )
+    expect(wrapper.toJSON()).toMatchSnapshot()
+  })
   test('debe de incrementar el contador', () => {
     const wrapper = renderer.create(
       <ProductCard product={product1}>
@@ -28,13 +28,13 @@ describe('ProductCard', () => {
           </>
         )}
       </ProductCard>
-    );
-    let tree = wrapper.toJSON();
-    expect(tree).toMatchSnapshot();
+    )
+    let tree = wrapper.toJSON()
+    expect(tree).toMatchSnapshot()
     act(() => {
-      wrapper.root.findByType('button').props.onClick();
-    });
-    tree = wrapper.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-});
+      wrapper.root.findByType('button').props.onClick()
+    })
+    tree = wrapper.toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+})
